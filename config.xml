@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.ryanw.barcodedemo"
+        id        = "br.com.benjax.qrteste"
         version   = "2.0.0">
-    <name>Scanner Demo</name>
+    <name>Benjax QR</name>
 
     <description>
-        Scans barcodes.
+        Exemplo de leitor de QR Code
     </description>
 
-    <author href="http://phonegap.com" email="support@phonegap.com">
+    <author href="http://benjax.com.br" email="benjax@benjax.com.br">
         PhoneGap Team
     </author>
 
