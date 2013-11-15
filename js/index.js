@@ -39,15 +39,15 @@ var app = {
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.scan(function (result) {
-            $("#retorno").text("Conteúdo\n" +
+            /* $("#retorno").text("Conteúdo\n" +
 					"Resultado: " + result.text + "\n" +
 					"Formato: " + result.format + "\n");
- /*
+            */
             alert(	"Conteúdo\n" + 
 					"Resultado: " + result.text + "\n" + 
 					"Formato: " + result.format + "\n"
 					);  
-
+/*
           
 		   console.log("Conteúdo: \n" +
                 "texto: " + result.text + "\n" +
