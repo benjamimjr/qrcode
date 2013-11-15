@@ -58,16 +58,18 @@ var app = {
 
         scanner.scan( function (result) { 
 
-            alert("Conteúdo\n" + 
-            "Resultado: " + result.text + "\n" + 
-            "Formato: " + result.format + "\n");  
+            alert(	"Conteúdo\n" + 
+					"Resultado: " + result.text + "\n" + 
+					"Formato: " + result.format + "\n"
+					);  
 
-           console.log("Conteúdo: \n" +
+           /*
+		   console.log("Conteúdo: \n" +
                 "texto: " + result.text + "\n" +
                 "formato: " + result.format + "\n");
             document.getElementById("info").innerHTML = result.text;
             console.log(result);
-            /*
+            
             if (args.format == "QR_CODE") {
                 window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
             }
