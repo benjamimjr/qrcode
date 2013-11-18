@@ -44,9 +44,7 @@ var app = {
 					"Formato: " + result.format + "\n");
             */
             
-            $('#results').html('Conteúdo\n'  
-					'Resultado: ' + result.text + '\n' + 
-					"Formato: " + result.format + '\n');
+            $('#results').html('Conteúdo\n Resultado: ' + result.text + '\n Formato: ' + result.format + '\n');
 /*
           
 		   console.log("Conteúdo: \n" +
