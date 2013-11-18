@@ -37,18 +37,23 @@ var app = {
         console.log('scanning');
         
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
-
+        
         scanner.scan(function (result) {
             /* $("#retorno").text("Conteúdo\n" +
 					"Resultado: " + result.text + "\n" +
 					"Formato: " + result.format + "\n");
             */
+
+            document.getElementById('retorno').innerHTML = " Conteúdo\n" +
+					"Resultado: " + result.text + "\n" +
+					"Formato: " + result.format + "\n";
+            /*
             alert(	" 1Conteúdo\n" + 
 					"Resultado: " + result.text + "\n" + 
 					"Formato: " + result.format + "\n"
 					);
           
-/*
+
           
 		   console.log("Conteúdo: \n" +
                 "texto: " + result.text + "\n" +
