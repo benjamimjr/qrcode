@@ -43,8 +43,11 @@ var app = {
 					"Resultado: " + result.text + "\n" +
 					"Formato: " + result.format + "\n");
             */
-            
-            $('#results').html('Conteúdo\n Resultado: ' + result.text + '\n Formato: ' + result.format + '\n');
+            alert(	" 1Conteúdo\n" + 
+					"Resultado: " + result.text + "\n" + 
+					"Formato: " + result.format + "\n"
+					);
+          
 /*
           
 		   console.log("Conteúdo: \n" +
@@ -67,9 +70,9 @@ var app = {
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.encode(scanner.Encode.TEXT_TYPE, "http://www.nhl.com", function(success) {
-            $('#results').html('Conteúdo\n Resultado: ' + result.text + '\n Formato: ' + result.format + '\n');
+            alert(" 2 encode success: " + success);
           }, function(fail) {
-            alert("Erro ao ler: " + fail);
+            alert("encoding failed: " + fail);
           }
         );
 
