@@ -67,9 +67,9 @@ var app = {
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.encode(scanner.Encode.TEXT_TYPE, "http://www.nhl.com", function(success) {
-            alert("encode success: " + success);
+            $('#results').html('Conteúdo\n Resultado: ' + result.text + '\n Formato: ' + result.format + '\n');
           }, function(fail) {
-            alert("encoding failed: " + fail);
+            alert("Erro ao ler: " + fail);
           }
         );
 
