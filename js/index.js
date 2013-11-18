@@ -39,50 +39,12 @@ var app = {
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
         
         scanner.scan(function (result) {
-            /* $("#retorno").text("Conteúdo\n" +
-					"Resultado: " + result.text + "\n" +
-					"Formato: " + result.format + "\n");
-            */
-
+          
             document.getElementById('retorno').innerHTML = " Conteúdo\n" +
 					"Resultado: " + result.text + "\n" +
 					"Formato: " + result.format + "\n";
-            /*
-            alert(	" 1Conteúdo\n" + 
-					"Resultado: " + result.text + "\n" + 
-					"Formato: " + result.format + "\n"
-					);
-          
-
-          
-		   console.log("Conteúdo: \n" +
-                "texto: " + result.text + "\n" +
-                "formato: " + result.format + "\n");
-            document.getElementById("info").innerHTML = result.text;
-            console.log(result);
-            
-            if (args.format == "QR_CODE") {
-                window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
-            }
-            */
-
         }, function (error) { 
             console.log("Erro ao scaniar: ", error); 
         } );
-    },
-
-    encode: function() {
-        var scanner = cordova.require("cordova/plugin/BarcodeScanner");
-
-        scanner.encode(scanner.Encode.TEXT_TYPE, "http://www.nhl.com", function(success) {
-            alert(" 2 encode success: " + success);
-          }, function(fail) {
-            alert("encoding failed: " + fail);
-          }
-        );
-
     }
-
-
-
 };
